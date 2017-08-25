@@ -9,6 +9,7 @@
     <modules>
     		<module>facebook-data-boot</module>
     		<module>facebook-data-model</module>
+    		<module>facebook-data-services</module>
     </modules>
     
     <properties>
