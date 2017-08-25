@@ -2,13 +2,13 @@
   	<modelVersion>4.0.0</modelVersion>
   	
   	<parent>
-    		<groupId>com.facebook</groupId>
-	    <artifactId>facebook-parent</artifactId>
+    		<groupId>com.friendsbook</groupId>
+	    <artifactId>friendsbook-parent</artifactId>
 	    <version>1.0-SNAPSHOT</version>
   	</parent>
   	
-  	<groupId>com.facebook.data.boot</groupId>
-  	<artifactId>facebook-data-boot</artifactId>
+  	<groupId>com.friendsbook.data.boot</groupId>
+  	<artifactId>friendsbook-data-boot</artifactId>
   	
 	<dependencies>
 		<dependency>
@@ -23,8 +23,8 @@
   		</dependency>
   		
   		<dependency>
-  			<groupId>com.facebook.data.services</groupId>
-  			<artifactId>facebook-data-services</artifactId>
+  			<groupId>com.friendsbook.data.services</groupId>
+  			<artifactId>friendsbook-data-services</artifactId>
   			<version>${project.version}</version>
   		</dependency>
 	</dependencies>
