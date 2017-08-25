@@ -1,4 +1,4 @@
-package com.facebook.data.spi.model;
+package com.friendsbook.data.spi.model;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 

@@ -1,5 +1,6 @@
-package com.facebook.data.spi.model;
+package com.friendsbook.data.spi.model;
 import java.util.List;
+import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Embedded;
@@ -65,9 +66,7 @@ public class User implements IUser {
 	@Column(name="modified_date")
 	private String modifiedDate;
 	
-	public User() {
-		
-	}
+	public User() { }
 
 	@Override
 	public void setUserName(String userName) {
@@ -186,13 +185,19 @@ public class User implements IUser {
 	
 	@Override
 	public int hashCode() {
-		int hash = 31;
-		hash >>= 7;
-		return hash * this.email.hashCode() >> this.firstName.hashCode() >> this.lastName.hashCode();
+		return Objects.hash(this.id, this.userName, this.firstName, this.lastName, this.address, this.email);
 	}
 	
 	@Override
 	public boolean equals(Object object) {
-		return true;
+		return Objects.deepEquals(this, object);
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder display = new StringBuilder();
+		display.append("[").append("FirstName: " + firstName).append(", LastName: " + lastName);
+		display.append("Email: " + email).append("]");
+		return display.toString();
 	}
 }

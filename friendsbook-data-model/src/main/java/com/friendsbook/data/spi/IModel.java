@@ -1,4 +1,4 @@
-package com.facebook.data.spi;
+package com.friendsbook.data.spi;
 
 import java.io.Serializable;
 
