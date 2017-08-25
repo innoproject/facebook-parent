@@ -1,4 +1,5 @@
 package com.friendsbook.data.spi.model;
+
 import java.util.List;
 import java.util.Objects;
 
@@ -14,8 +15,9 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-import com.facebook.data.spi.IAddress;
-import com.facebook.data.spi.IUser;
+import com.friendsbook.data.spi.IAddress;
+import com.friendsbook.data.spi.IUser;
+
 
 @Entity
 @Table(name="USERS")

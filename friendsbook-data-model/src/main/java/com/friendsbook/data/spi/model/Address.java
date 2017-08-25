@@ -1,8 +1,9 @@
 package com.friendsbook.data.spi.model;
+
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
-import com.facebook.data.spi.IAddress;
+import com.friendsbook.data.spi.IAddress;
 
 @Embeddable
 public class Address implements IAddress {
